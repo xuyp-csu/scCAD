@@ -23,43 +23,30 @@ tqdm --- 4.64.0
 
 ## Arguments:
 
-data : `pandas.DataFrame` or `2-D numpy.array`, optional
-    Gene expression data matrix, gene in columns and samples in rows.
+data: Gene expression data matrix, gene in columns and samples in rows.
 
-dataName : string
-    Name of scRNA-seq dataset.
+dataName: Name of scRNA-seq dataset.
 
-cellNames : list -> string
-    The length must be the same as the number of rows in the data matrix.
-    Names of all cells in the scRNA-seq dataset.
+cellNames: Names of all cells in the scRNA-seq dataset.
 
-geneNames : list -> string
-    The length must be the same as the number of columns in the data matrix.
-    Names of all genes in the scRNA-seq dataset.
+geneNames: Names of all genes in the scRNA-seq dataset.
 
-normalization : boolean
-    Whether the data needs to be normalized. (default: True)
+normalization: Whether the data needs to be normalized. (default: True)
 
-seed : integer
-    Random seed.
+seed: Random seed.
 
-merge_h : float
-    Threshold to use when doing cluster merge. (default: 0.3)
+merge_h: Threshold to use when doing cluster merge. (default: 0.3)
 
-overlap_h : float
-    Overlap threshold to identify rare clusters. (default: 0.7)
+overlap_h: Overlap threshold to identify rare clusters. (default: 0.7)
 
-rare_h : float
-    Rare threshold to use when doing cluster decomposition. (default: 0.01)
+rare_h: Rare threshold to use when doing cluster decomposition. (default: 0.01)
 
-save_full : boolean
-    Whether the full result needs to be saved. (default: True)
+save_full: Whether the full result needs to be saved. (default: True)
 
-save_path : string
-    Path to save results.
+save_path: Path to save results.
 
 ## Files:
-h5data -- a example scRNAseq data, Airway
+UUOkidney.h5 -- a example scRNAseq data, UUOkidney
 
 scCAD.py -- implementation of scCAD algorithm
 
@@ -75,7 +62,7 @@ import h5py
 from collections import Counter
 
 dir = './h5data'
-dataName = 'Airway'
+dataName = 'UUOkidney'
 data_mat = h5py.File(os.path.join(dir, dataName + '.h5'))
 X = np.array(data_mat['X'])
 y = np.array(data_mat['Y'])
