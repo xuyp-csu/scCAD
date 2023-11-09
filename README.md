@@ -40,14 +40,9 @@ tqdm --- 4.64.0
 	```
 	pip install -r requirements.txt
 	```
-### 
-
-
  
 ## Usage
-
-
-## Arguments:
+### Arguments:
 
 data: Gene expression data matrix, gene in columns and samples in rows.
 
@@ -71,45 +66,61 @@ save_full: Whether the full result needs to be saved. (default: True)
 
 save_path: Path to save results.
 
-## Files:
+### Files:
 UUOkidney.h5 -- a example scRNAseq data, UUOkidney
 
 scCAD.py -- implementation of scCAD algorithm
 
 scCAD_overview.png -- CellBRF workflow
 
-## Demo:
-```
-import scDOD
-import os
-import numpy as np
-import pandas as pd
-import h5py
-from collections import Counter
+### Step-by-step description of full demo is as follows
+1. <h4>Load libraries </h4>
 
-dir = './h5data'
-dataName = 'UUOkidney'
-data_mat = h5py.File(os.path.join(dir, dataName + '.h5'))
-X = np.array(data_mat['X'])
-y = np.array(data_mat['Y'])
-geneName = np.array(data_mat['gn'])
-cellName = np.array(data_mat['cn'])
-data_mat.close()
-_, score, sub_clusters, _ = scDOD.scDOD(data=X, dataName=dataName, cellNames=cellName, geneNames=geneName, save_path='./scDOD_res/')
-for i in range(len(np.unique(sub_clusters))):
-    if score[i] >= 0.7:
-        print(Counter(y[np.where(sub_clusters==i)[0]]))    
-print(pd.DataFrame(y).value_counts())
-```
+	```python
+	import scCAD
+	import numpy as np
+	import pandas as pd
+	import h5py
+	from collections import Counter
+	```
+2. <h4>Load Data in current environment.</h4>
+	```python
+	# Data matrix should only consist of values where rows represent cells and columns represent genes.
+	data_mat = h5py.File('./1%Jurkat.h5')
+	data = np.array(data_mat['X']) # Cells * Genes
+	labels = np.array(data_mat['Y'])
+	geneName = np.array(data_mat['gn'])
+	cellName = np.array(data_mat['cn'])
+	data_mat.close()
+	labels = np.array([str(i, 'UTF-8') for i in y])
+	geneName = np.array([str(i, 'UTF-8') for i in geneName])
+	cellName = np.array([str(i, 'UTF-8') for i in cellName])
+	```
+3. <h4>Execute scCAD on the dataset mentioned above.</h4>
+	```python
+ 	# If gene and cell names are not provided, scCAD will generate them automatically.
+	result, score, sub_clusters, degs_list = scCAD.scCAD(data=data, dataName='Jurkat', cellNames=cellName, geneNames=geneName, save_path='./scCAD_res/') 
+ 	'''
+  	Returned Value :
+		result : Rare subclusters identified by scCAD: list.
+     	    	score : Score of every sub_clusters: np.array[n sub_clusters].
+	    	sub_clusters : Sub-cluster label assignment for each cell: np.array[n cells].
+      		degs_list : List of differentially expressed genes used for rare sub-clusters: list.
+  	'''
+	```
+ 4. <h4>View the identified results, if labels are available.</h4>
+ 	```python
+  	
+  	```
 
-# Contact
+## Contact
 If any questions, please do not hesitate to contact us at: 
 
 Yunpei Xu, xu_yunpei@csu.edu.cn
 
 Jianxin Wang, jxwang@csu.edu.cn
 
-# How to cite?
+## How to cite?
 If you use this tool, please cite the following work.
 
 Xu Y, et al. Cluster decomposition-based Anomaly Detection for Rare Cell Identification in Single Cell Expression Data. 2023, submitted.
