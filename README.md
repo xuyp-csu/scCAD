@@ -4,8 +4,8 @@ Cluster decomposition-based Anomaly Detection method (scCAD) is used to effectiv
 
 ![alt text](https://github.com/xuyp-csu/scCAD/blob/main/scCAD_overview.png)
 
-## Installation
-### Required python modules
+## Getting Started
+### Prerequisites
 
 Python --- 3.7.13
 
@@ -27,9 +27,9 @@ scipy --- 1.7.3
 
 tqdm --- 4.64.0
 
-### Conda users 
+### Installation
 
-1. Create your environment and activate it:
+1. (Conda users) Create your environment and activate it:
 	```
 	conda create -n scCAD_env python=3.7
  	source activate scCAD_env
