@@ -43,32 +43,18 @@ tqdm --- 4.64.0
  
 ## Usage
 ### Arguments:
-	```python
- 	'''
-	data : `pandas.DataFrame` or `2-D numpy.array`, optional
-        	Gene expression data matrix, gene in columns and samples in rows.
-	dataName : string
-		Name of scRNA-seq dataset.
-  	cellNames : list -> string
-   		The length must be the same as the number of rows in the data matrix.
-	        Names of all cells in the scRNA-seq dataset.
-	geneNames : list -> string
-	        The length must be the same as the number of columns in the data matrix.
-	        Names of all genes in the scRNA-seq dataset.
-	normalization : boolean
-	        Whether the data needs to be normalized. (default: True)
-	seed : integer
-	        Random seed.
-	merge_h : float
-	        Threshold to use when doing cluster merge. (default: 0.3)
-	overlap_h : float
-	        Overlap threshold to identify rare clusters. (default: 0.7)
-	rare_h : float
-	        Rare threshold to use when doing cluster decomposition. (default: 0.01)
-	save_full : boolean
-	        Whether the full result needs to be saved. (default: True)
-	save_path : string
-	        Path to save results.
+	```
+	data: The expression data matrix with genes in columns and cells in rows.
+	dataName: Name of scRNA-seq dataset. (default: None)
+  	cellNames: Names of all cells. (default: None)
+	geneNames: Names of all genes. (default: None)
+	normalization: Whether the data needs to be normalized. (default: True)
+	seed: Random seed. (default: 2023)
+	rare_h: Rare threshold to use when doing cluster decomposition. (default: 0.01)
+	merge_h: Threshold to use when doing cluster merge. (default: 0.3)
+	overlap_h: Overlap threshold to identify rare sub-clusters. (default: 0.7)
+	save_full: Whether the full result needs to be saved. (default: True)
+	save_path:  Path to save results.
 	```
 ### Files:
 1. 1%Jurkat.h5 -- An example scRNA-seq dataset comprising 1540 293T cells and 16 Jurkat cells.
