@@ -88,17 +88,17 @@ scCAD_overview.png -- CellBRF workflow
 	data_mat = h5py.File('./1%Jurkat.h5')
 	data = np.array(data_mat['X']) # Cells * Genes
 	labels = np.array(data_mat['Y'])
-	geneName = np.array(data_mat['gn'])
-	cellName = np.array(data_mat['cn'])
+	geneNames = np.array(data_mat['gn'])
+	cellNames = np.array(data_mat['cn'])
 	data_mat.close()
 	labels = np.array([str(i, 'UTF-8') for i in y])
-	geneName = np.array([str(i, 'UTF-8') for i in geneName])
-	cellName = np.array([str(i, 'UTF-8') for i in cellName])
+	geneNames = np.array([str(i, 'UTF-8') for i in geneNames])
+	cellNames = np.array([str(i, 'UTF-8') for i in cellNames])
 	```
 3. Execute scCAD on the dataset mentioned above.
 	```python
  	# If gene and cell names are not provided, scCAD will generate them automatically.
-	result, score, sub_clusters, degs_list = scCAD.scCAD(data=data, dataName='Jurkat', cellNames=cellName, geneNames=geneName, save_path='./scCAD_res/') 
+	result, score, sub_clusters, degs_list = scCAD.scCAD(data=data, dataName='Jurkat', cellNames=cellNames, geneNames=geneNames, save_path='./scCAD_res/') 
  	'''
   	Returned Value :
  		result : Rare sub-clusters identified by scCAD: list.
@@ -109,7 +109,11 @@ scCAD_overview.png -- CellBRF workflow
 	```
  4. View the identified results, if labels are available.
  	```python
-  	
+		# If cell names are not provided, please run:
+		# cellNames = [str(i) for i in range(data.shape[0])]
+		for i in result:
+			indices = np.where(np.isin(cellNames, i))[0]
+  			print(Counter(label)[indices])
   	```
 
 ## Contact
