@@ -91,7 +91,7 @@ scCAD_overview.png -- CellBRF workflow
 	geneNames = np.array(data_mat['gn'])
 	cellNames = np.array(data_mat['cn'])
 	data_mat.close()
-	labels = np.array([str(i, 'UTF-8') for i in y])
+	labels = np.array([str(i, 'UTF-8') for i in labels])
 	geneNames = np.array([str(i, 'UTF-8') for i in geneNames])
 	cellNames = np.array([str(i, 'UTF-8') for i in cellNames])
 	```
@@ -113,7 +113,7 @@ scCAD_overview.png -- CellBRF workflow
 		# cellNames = [str(i) for i in range(data.shape[0])]
 		for i in result:
 			indices = np.where(np.isin(cellNames, i))[0]
-  			print(Counter(label)[indices])
+  			print(Counter(labels)[indices])
   	```
 
 ## Contact
