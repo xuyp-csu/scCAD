@@ -7,25 +7,16 @@ Cluster decomposition-based Anomaly Detection method (scCAD) is used to effectiv
 ## Getting Started
 ### Prerequisites
 
-Python --- 3.7.13
-
-h5py --- 3.7.0
-
-networkx --- 2.6.3
-
-numpy --- 1.21.5
-
-pandas --- 1.3.5
-
-python-louvain --- 0.16
-
-Scanpy --- 1.9.1
-
-scikit-learn --- 1.0.2
-
-scipy --- 1.7.3
-
-tqdm --- 4.64.0
+	Python --- 3.7.13
+	h5py --- 3.7.0
+	networkx --- 2.6.3
+	numpy --- 1.21.5
+	pandas --- 1.3.5
+	python-louvain --- 0.16
+	Scanpy --- 1.9.1
+	scikit-learn --- 1.0.2
+	scipy --- 1.7.3
+	tqdm --- 4.64.0
 
 ### Installation
 
@@ -43,7 +34,6 @@ tqdm --- 4.64.0
  
 ## Usage
 ### Arguments:
-	```
 	data: The expression data matrix with genes in columns and cells in rows.
 	dataName: Name of scRNA-seq dataset. (default: None)
   	cellNames: Names of all cells. (default: None)
@@ -55,7 +45,6 @@ tqdm --- 4.64.0
 	overlap_h: Overlap threshold to identify rare sub-clusters. (default: 0.7)
 	save_full: Whether the full result needs to be saved. (default: True)
 	save_path:  Path to save results.
-	```
 ### Files:
 1. 1%Jurkat.h5 -- An example scRNA-seq dataset comprising 1540 293T cells and 16 Jurkat cells.
 2. scCAD.py -- The implementation of the scCAD algorithm.
