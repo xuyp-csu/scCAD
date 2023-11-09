@@ -76,7 +76,7 @@ scCAD_overview.png -- CellBRF workflow
 ### Step-by-step description of full demo is as follows
 1. <h4>Load libraries </h4>
 
-	```python
+	```
 	import scCAD
 	import numpy as np
 	import pandas as pd
@@ -84,7 +84,7 @@ scCAD_overview.png -- CellBRF workflow
 	from collections import Counter
 	```
 2. <h4>Load Data in current environment.</h4>
-	```python
+	```
 	# Data matrix should only consist of values where rows represent cells and columns represent genes.
 	data_mat = h5py.File('./1%Jurkat.h5')
 	data = np.array(data_mat['X']) # Cells * Genes
@@ -97,7 +97,7 @@ scCAD_overview.png -- CellBRF workflow
 	cellName = np.array([str(i, 'UTF-8') for i in cellName])
 	```
 3. <h4>Execute scCAD on the dataset mentioned above.</h4>
-	```python
+	```
  	# If gene and cell names are not provided, scCAD will generate them automatically.
 	result, score, sub_clusters, degs_list = scCAD.scCAD(data=data, dataName='Jurkat', cellNames=cellName, geneNames=geneName, save_path='./scCAD_res/') 
  	'''
@@ -109,7 +109,7 @@ scCAD_overview.png -- CellBRF workflow
   	'''
 	```
  4. <h4>View the identified results, if labels are available.</h4>
- 	```python
+ 	```
   	
   	```
 
