@@ -75,7 +75,7 @@ scCAD_overview.png -- CellBRF workflow
 
 ### Step-by-step description of full demo is as follows
 1. Load libraries.
-	```
+	```python
 	import scCAD
 	import numpy as np
 	import pandas as pd
