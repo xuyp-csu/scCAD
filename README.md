@@ -21,8 +21,15 @@ networkx --- 2.6.3
 
 tqdm --- 4.64.0
 
+### Conda users 
+1. 
 
+2. Install dependencies with pip (skip if on hiesinger sherlock partition)
 
+	```
+	pip install -r requirements.txt
+	```
+ 
 ## Usage
 
 
