@@ -22,13 +22,21 @@ networkx --- 2.6.3
 tqdm --- 4.64.0
 
 ### Conda users 
-1. 
 
-2. Install dependencies with pip (skip if on hiesinger sherlock partition)
+1. Create your environment and activate it:
+	```
+	conda create -n scCAD_env python=3.7
+ 	conda activate scCAD_env
+ 	```  
+
+2. Install dependencies with pip:
 
 	```
 	pip install -r requirements.txt
 	```
+### 
+
+
  
 ## Usage
 
