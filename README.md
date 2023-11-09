@@ -101,10 +101,10 @@ scCAD_overview.png -- CellBRF workflow
 	result, score, sub_clusters, degs_list = scCAD.scCAD(data=data, dataName='Jurkat', cellNames=cellName, geneNames=geneName, save_path='./scCAD_res/') 
  	'''
   	Returned Value :
-		result : Rare subclusters identified by scCAD: list.
-     	    	score : Score of every sub_clusters: np.array[n sub_clusters].
-	    	sub_clusters : Sub-cluster label assignment for each cell: np.array[n cells].
-      		degs_list : List of differentially expressed genes used for rare sub-clusters: list.
+ 		result : Rare sub-clusters identified by scCAD: list.
+ 		score : Score of every sub_clusters: np.array[n sub_clusters].
+ 		sub_clusters : Sub-cluster label assignment for each cell: np.array[n cells].
+ 		degs_list : List of differentially expressed genes used for rare sub-clusters: list.
   	'''
 	```
  4. View the identified results, if labels are available.
