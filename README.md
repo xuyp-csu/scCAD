@@ -9,6 +9,8 @@ Cluster decomposition-based Anomaly Detection method (scCAD) is used to effectiv
 
 Python --- 3.7.13
 
+h5py --- 3.7.0
+
 networkx --- 2.6.3
 
 numpy --- 1.21.5
