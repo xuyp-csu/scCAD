@@ -72,13 +72,9 @@ tqdm --- 4.64.0
 	```
 ### Files:
 1. 1%Jurkat.h5 -- An example scRNA-seq dataset comprising 1540 293T cells and 16 Jurkat cells.
-
 2. scCAD.py -- The implementation of the scCAD algorithm.
-
 3. scCAD_overview.png -- Overview of scCAD.
-
 4. requirements.txt -- The configuration file to install the specified packages with their specified versions.
-
 ### Step-by-step description of full demo is as follows
 1. Load libraries.
 	```python
