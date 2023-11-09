@@ -113,7 +113,7 @@ scCAD_overview.png -- CellBRF workflow
 	# cellNames = [str(i) for i in range(data.shape[0])]
 	for i in result:
 		indices = np.where(np.isin(cellNames, i))[0]
-		print(Counter(labels)[indices])
+		print(Counter(labels[indices]))
   	```
 
 ## Contact
