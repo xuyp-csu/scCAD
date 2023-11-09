@@ -26,7 +26,7 @@ tqdm --- 4.64.0
 1. Create your environment and activate it:
 	```
 	conda create -n scCAD_env python=3.7
- 	conda activate scCAD_env
+ 	source activate scCAD_env
  	```  
 
 2. Install dependencies with pip:
