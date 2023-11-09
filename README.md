@@ -109,11 +109,11 @@ scCAD_overview.png -- CellBRF workflow
 	```
  4. View the identified results, if labels are available.
  	```python
-		# If cell names are not provided, please run:
-		# cellNames = [str(i) for i in range(data.shape[0])]
-		for i in result:
-			indices = np.where(np.isin(cellNames, i))[0]
-  			print(Counter(labels)[indices])
+	# If cell names are not provided, please run:
+	# cellNames = [str(i) for i in range(data.shape[0])]
+	for i in result:
+		indices = np.where(np.isin(cellNames, i))[0]
+		print(Counter(labels)[indices])
   	```
 
 ## Contact
