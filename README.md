@@ -74,8 +74,7 @@ scCAD.py -- implementation of scCAD algorithm
 scCAD_overview.png -- CellBRF workflow
 
 ### Step-by-step description of full demo is as follows
-1. <h4>Load libraries </h4>
-
+1. Load libraries.
 	```
 	import scCAD
 	import numpy as np
@@ -83,7 +82,7 @@ scCAD_overview.png -- CellBRF workflow
 	import h5py
 	from collections import Counter
 	```
-2. <h4>Load Data in current environment.</h4>
+2. Load Data in current environment.
 	```
 	# Data matrix should only consist of values where rows represent cells and columns represent genes.
 	data_mat = h5py.File('./1%Jurkat.h5')
@@ -96,7 +95,7 @@ scCAD_overview.png -- CellBRF workflow
 	geneName = np.array([str(i, 'UTF-8') for i in geneName])
 	cellName = np.array([str(i, 'UTF-8') for i in cellName])
 	```
-3. <h4>Execute scCAD on the dataset mentioned above.</h4>
+3. Execute scCAD on the dataset mentioned above.
 	```
  	# If gene and cell names are not provided, scCAD will generate them automatically.
 	result, score, sub_clusters, degs_list = scCAD.scCAD(data=data, dataName='Jurkat', cellNames=cellName, geneNames=geneName, save_path='./scCAD_res/') 
@@ -108,7 +107,7 @@ scCAD_overview.png -- CellBRF workflow
       		degs_list : List of differentially expressed genes used for rare sub-clusters: list.
   	'''
 	```
- 4. <h4>View the identified results, if labels are available.</h4>
+ 4. View the identified results, if labels are available.
  	```
   	
   	```
