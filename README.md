@@ -102,8 +102,8 @@ scCAD_overview.png -- CellBRF workflow
  	'''
   	Returned Value :
  		result : Rare sub-clusters identified by scCAD: list.
- 		score : Score of every sub_clusters: np.array[n sub_clusters].
- 		sub_clusters : Sub-cluster label assignment for each cell: np.array[n cells].
+ 		score : Score of every sub_clusters: np.array[n sub-clusters].
+ 		sub_clusters : Assignment of sub-cluster labels for each cell: np.array[n cells].
  		degs_list : List of differentially expressed genes used for rare sub-clusters: list.
   	'''
 	```
