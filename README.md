@@ -43,35 +43,27 @@ tqdm --- 4.64.0
  
 ## Usage
 ### Arguments:
-
-data: Gene expression data matrix, gene in columns and samples in rows.
-
-dataName: Name of scRNA-seq dataset.
-
-cellNames: Names of all cells in the scRNA-seq dataset.
-
-geneNames: Names of all genes in the scRNA-seq dataset.
-
-normalization: Whether the data needs to be normalized. (default: True)
-
-seed: Random seed.
-
-merge_h: Threshold to use when doing cluster merge. (default: 0.3)
-
-overlap_h: Overlap threshold to identify rare clusters. (default: 0.7)
-
-rare_h: Rare threshold to use when doing cluster decomposition. (default: 0.01)
-
-save_full: Whether the full result needs to be saved. (default: True)
-
-save_path: Path to save results.
-
+	```
+	data: Gene expression data matrix, gene in columns and samples in rows.
+	dataName: Name of scRNA-seq dataset.
+	cellNames: Names of all cells in the scRNA-seq dataset.
+	geneNames: Names of all genes in the scRNA-seq dataset.
+	normalization: Whether the data needs to be normalized. (default: True)
+	seed: Random seed.
+	merge_h: Threshold to use when doing cluster merge. (default: 0.3)
+	overlap_h: Overlap threshold to identify rare clusters. (default: 0.7)
+	rare_h: Rare threshold to use when doing cluster decomposition. (default: 0.01)
+	save_full: Whether the full result needs to be saved. (default: True)
+	save_path: Path to save results.
+	```
 ### Files:
-UUOkidney.h5 -- a example scRNAseq data, UUOkidney
+1. 1%Jurkat.h5 -- An example scRNA-seq dataset comprising 1540 293T cells and 16 Jurkat cells.
 
-scCAD.py -- implementation of scCAD algorithm
+2. scCAD.py -- The implementation of the scCAD algorithm.
 
-scCAD_overview.png -- CellBRF workflow
+3. scCAD_overview.png -- Overview of scCAD.
+
+4. requirements.txt -- The configuration file to install the specified packages with their specified versions.
 
 ### Step-by-step description of full demo is as follows
 1. Load libraries.
