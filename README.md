@@ -2,7 +2,7 @@
 ## Introduction
 Cluster decomposition-based Anomaly Detection method (scCAD) is used to effectively identify rare cell types in scRNA-seq data.
 
-![alt text]([https://github.com/xuyp-csu/scCAD/blob/main/scCAD_overview.png](https://github.com/xuyp-csu/scCAD/blob/main/scCAD_overview.png))
+![alt text](https://github.com/xuyp-csu/scCAD/blob/main/scCAD_overview.png)
 
 ## Getting Started
 ### Prerequisites
