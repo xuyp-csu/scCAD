@@ -68,6 +68,7 @@ Cluster decomposition-based Anomaly Detection method (scCAD) is used to effectiv
 	geneNames = np.array(data_mat['gn'])
 	cellNames = np.array(data_mat['cn'])
 	data_mat.close()
+ 	data = np.vectorize(float)(data)
 	labels = np.array([str(i, 'UTF-8') for i in labels])
 	geneNames = np.array([str(i, 'UTF-8') for i in geneNames])
 	cellNames = np.array([str(i, 'UTF-8') for i in cellNames])
