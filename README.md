@@ -5,6 +5,11 @@ Cluster decomposition-based Anomaly Detection method (scCAD) is used to effectiv
 ![alt text](https://github.com/xuyp-csu/scCAD/blob/main/scCAD_overview.png)
 
 ## Getting Started
+### OS Requirements
+This package is supported for *macOS* and *Linux*. The package has been tested on the following systems:
++ macOS: Mojave (10.14.1)
++ Linux: Ubuntu 16.04.7
+
 ### Prerequisites
 
 	Python --- 3.7.13
