@@ -35,13 +35,14 @@ This package is supported for *windows* and *Linux*. The package has been tested
  	```
  	-Use `conda activate` instead of `source activate`, if required.
    
-	-This takes around 30 seconds to build.
+	-Building typically completes in about 30 seconds.
 
 3. Install dependencies with pip:
 
 	```
 	pip install -r requirements.txt
 	```
+ 	-Installation typically requires around 3 to 5 minutes, depending on network conditions.
  
 ## Usage
 ### Arguments:
