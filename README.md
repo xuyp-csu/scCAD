@@ -32,6 +32,7 @@ This package is supported for *windows* and *Linux*. The package has been tested
 	```
 	conda create -n scCAD_env python=3.7
  	source activate scCAD_env
+ 	# or conda activate scCAD_env
  	```
 	-This takes 10-15 mins to build
 
