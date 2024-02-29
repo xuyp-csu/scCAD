@@ -25,7 +25,7 @@ This package is supported for *macOS* and *Linux*. The package has been tested o
 
 ### Installation
 
-1. (Conda users) Create your environment and activate it:
+1. (Conda users, Conda version: 4.12.0) Create your environment and activate it:
 	```
 	conda create -n scCAD_env python=3.7
  	source activate scCAD_env
