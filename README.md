@@ -9,7 +9,7 @@ Cluster decomposition-based Anomaly Detection method (scCAD) is used to effectiv
 `scCAD` package requires only a standard computer with enough RAM to support the in-memory operations.
 
 ### OS Requirements
-This package is supported for *Linux* and *macOS*. The package has been tested on the following system:
+This package is supported for *Linux* and *macOS*. The package has been tested on the following systems:
 + Linux: Ubuntu 16.04.7
 + macOS: Monterey 12.6.3
 
