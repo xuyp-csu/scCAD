@@ -29,8 +29,8 @@ This package is supported for *windows* and *Linux*. The package has been tested
 ### Installation
 1. **Necessary Step:** Download from Github:
    	```
-	wget -c https://github.com/xuyp-csu/scCAD/archive/refs/heads/main.zip -O baidu.index.html
-	cd mgcpy
+	git clone https://github.com/xuyp-csu/scCAD.git
+	cd scCAD
     	```
 
 2. **Recommended Step:** (Conda users, Conda version: 4.12.0) Create your environment and activate it:
