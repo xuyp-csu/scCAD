@@ -85,7 +85,7 @@ This package is supported for *windows* and *Linux*. The package has been tested
 	geneNames = np.array([str(i, 'UTF-8') for i in geneNames])
 	cellNames = np.array([str(i, 'UTF-8') for i in cellNames])
 	```
-3. Execute scCAD on the dataset mentioned above.
+3. Execute scCAD on the dataset mentioned above. The execution of this code approximately takes 40 seconds.
 	```python
  	# If gene and cell names are not provided, scCAD will generate them automatically.
 	result, score, sub_clusters, degs_list = scCAD.scCAD(data=data, dataName='Jurkat', cellNames=cellNames, geneNames=geneNames, save_path='./') 
@@ -116,5 +116,5 @@ Jianxin Wang, jxwang@csu.edu.cn
 ## How to cite?
 If you use this tool, please cite the following work.
 
-Xu Y, et al. Cluster decomposition-based Anomaly Detection for Rare Cell Identification in Single Cell Expression Data. 2023, submitted.
+Xu Y, et al. Cluster decomposition-based Anomaly Detection for Rare Cell Identification in Single Cell Expression Data. bioRxiv, 2024, doi: https://doi.org/10.1101/2024.02.25.581975.
 
