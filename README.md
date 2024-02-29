@@ -88,7 +88,7 @@ This package is supported for *windows* and *Linux*. The package has been tested
 3. Execute scCAD on the dataset mentioned above.
 	```python
  	# If gene and cell names are not provided, scCAD will generate them automatically.
-	result, score, sub_clusters, degs_list = scCAD.scCAD(data=data, dataName='Jurkat', cellNames=cellNames, geneNames=geneNames, save_path='./scCAD_res/') 
+	result, score, sub_clusters, degs_list = scCAD.scCAD(data=data, dataName='Jurkat', cellNames=cellNames, geneNames=geneNames, save_path='./') 
  	'''
   	Returned Value :
  		result : Rare sub-clusters identified by scCAD: list.
