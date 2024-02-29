@@ -27,8 +27,13 @@ This package is supported for *windows* and *Linux*. The package has been tested
 	tqdm --- 4.64.0
 
 ### Installation
+1. **Necessary Step:** Download from Github:
+   	```
+	wget -c https://github.com/xuyp-csu/scCAD/archive/refs/heads/main.zip -O baidu.index.html
+	cd mgcpy
+    	```
 
-1. (Conda users, Conda version: 4.12.0) Create your environment and activate it:
+2. **Recommended Step:** (Conda users, Conda version: 4.12.0) Create your environment and activate it:
 	```
 	conda create -n scCAD_env python=3.7
  	source activate scCAD_env
@@ -37,7 +42,7 @@ This package is supported for *windows* and *Linux*. The package has been tested
    
 	-Building typically completes in about 30 seconds.
 
-3. Install dependencies with pip:
+3. **Necessary Step:** Install dependencies with pip:
 
 	```
 	pip install -r requirements.txt
