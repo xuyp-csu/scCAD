@@ -31,7 +31,7 @@ This package is supported for *windows* and *Linux*. The package has been tested
    	```
 	git clone https://github.com/xuyp-csu/scCAD.git
 	cd scCAD
-    	```
+ 	```
 
 2. **Recommended Step:** (Conda users, Conda version: 4.12.0) Create your environment and activate it:
 	```
