@@ -111,6 +111,9 @@ This package is supported for *windows* and *Linux*. The package has been tested
 		print(Counter(labels[indices]))
   	```
 
+# License
+This project is covered under the **Apache 2.0 License**.
+
 ## Contact
 If any questions, please do not hesitate to contact us at: 
 
