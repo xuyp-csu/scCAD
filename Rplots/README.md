@@ -1,4 +1,4 @@
-# scCAD-rge-paper
+# scCAD-regenerate-figures
 Materials (source data & R code) for reproduction of published figures in the main manuscript and supplemental materials.
 
 ## Projects introduction
