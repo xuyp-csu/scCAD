@@ -67,6 +67,9 @@ This package is supported for *Linux* and *macOS*. The package has been tested o
 2. scCAD.py -- The implementation of the scCAD algorithm.
 3. scCAD_overview.png -- Overview of scCAD.
 4. requirements.txt -- The configuration file to install the specified packages with their specified versions.
+5. Demo.ipynb --  An example of using scCAD to analyze Jurkat dataset, including expected outputs and results presentation for each step.
+6. Demo_res -- A folder containing the output results of analyzing the Jurkat dataset using scCAD.
+7. Rplots -- A folder containing all the code to regenerate figures in the paper and supplementary materials, along with the source data files.
 ### Step-by-step description of full demo is as follows
 1. Load libraries.
 	```python
