@@ -124,5 +124,5 @@ Jianxin Wang, jxwang@csu.edu.cn
 ## How to cite?
 If you use this tool, please cite the following work.
 
-Xu Y, et al. Cluster decomposition-based Anomaly Detection for Rare Cell Identification in Single Cell Expression Data. bioRxiv, 2024, doi: https://doi.org/10.1101/2024.02.25.581975.
+Xu, Y., Wang, S., Feng, Q. et al. scCAD: Cluster decomposition-based anomaly detection for rare cell identification in single-cell expression data. Nat Commun 15, 7561 (2024). https://doi.org/10.1038/s41467-024-51891-9
 
